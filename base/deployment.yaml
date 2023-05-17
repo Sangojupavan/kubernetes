@@ -12,8 +12,7 @@ spec:
      rollingUpdate:
        maxSurge: 1
        maxUnavailable: 10
-       type: 
-         rollingUpdate:
+       type: rollingUpdate
    template:
      metadata:
        name: dashboard-deploy
@@ -22,9 +21,9 @@ spec:
          version: 1.0.0
    spec:
      containers:
-       - name: dashboard
-         image: shaikkhajaibrahim/dashboardservice:1.0.0
+      - name: dashboard
+        image: shaikkhajaibrahim/dashboardservice:1.0.0
      ports:
-       - containerPort: 80           
+      - containerPort: 80           
 
  
