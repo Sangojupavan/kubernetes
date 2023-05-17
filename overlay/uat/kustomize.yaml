@@ -1,0 +1,9 @@
+--- 
+resources:
+  - ../../base
+namespace: uat
+sameprifix: uat-
+labels:
+  - pairs:
+      env: uat
+      version: "1.0.3"

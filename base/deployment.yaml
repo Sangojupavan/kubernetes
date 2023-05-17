@@ -1,0 +1,30 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: dashboard-deploy
+spec:
+   minReadySeconds: 3
+   replicas: 2
+   selector:
+     matchLabels:
+       app: dashboard
+   strategy:
+     rollingUpdate:
+       maxSurge: 1
+       maxUnavailable: 10
+       type: 
+         rollingUpdate:
+   template:
+     metadata:
+       name: dashboard-deploy
+       labels:
+         app: dashboard
+         version: 1.0.0
+   spec:
+     containers:
+       - name: dashboard
+         image: shaikkhajaibrahim/dashboardservice:1.0.0
+     ports:
+       - containerPort: 80           
+
+ 
