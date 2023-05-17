@@ -1,8 +1,8 @@
 --- 
-base:
+resources:
   - ../../base
 namespace: dev
-sameprifix: dev-
+namePrefix: dev-
 labels:
   - pairs:
       env: dev

@@ -2,7 +2,7 @@
 resources:
   - ../../base
 namespace: qa
-sameprifix: qa-
+namePrefix: qa-
 labels:
   - pairs:
       env: qa

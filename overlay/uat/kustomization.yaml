@@ -2,7 +2,7 @@
 resources:
   - ../../base
 namespace: uat
-sameprifix: uat-
+namePrefix: uat-
 labels:
   - pairs:
       env: uat
