@@ -6,8 +6,8 @@ spec:
   type: LoadBalancer 
   selector:
     app: dashboard
-ports:
-  - protocol: TCP
-    port: 80
-    targetPort: 9376
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 9376
 
